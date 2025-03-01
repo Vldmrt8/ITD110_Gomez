@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+}
+
+body::before {
+  content: "";
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; /* Adjust opacity here */
+  z-index: -1; /* Puts it behind the content */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 50px 0 80px 0;
+}
+
+header{
+  height: auto;
+  width: 90%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: 50px auto;
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+header .navbar{
+  margin: auto;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar .menu{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 30px 0 20px 0;
+}
+
+.navbar {
+  color: red;
+}
+
+.navbar .menu li{
+  list-style: none;
+  color: #000;
+  text-decoration: none;
+  padding: auto;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.uploadCSV {
+  font-size: 2rem;
+  color: red;
+}
+
+
+
+.export-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  max-width: 300px;
+  padding: 12px 10px;
+  background-color: #222;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.export-button:hover {
+  cursor: pointer;
+  background-color: #303030;
+  transition: ease-in 0.1s;
+  color: white;
+}
+
+.uploadCSV .buttonUpload{
+  background-color: #222;
+  color: white;
+  padding: 10px 5px;
+  border: solid 2px transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  padding: 10px 5px;
+  margin: 2px 4px;
+  border: solid 2px transparent;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #303030;
+  transition: ease-in 0.08s;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content {
+  padding: 12px 15px;
+  border: 1px solid #222;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+table {
+  border: 10px solid #222;
+  border-bottom: 30px solid #222;
+  border-left: 10px solid #222;
+  border-right: 10px solid #222;
+  overflow-x: auto;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+thead th {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+tbody td {
+  word-break: break-word;
+  padding: 5px 10px;
+  border-bottom: 3px solid #222;
+}
+
+tbody .buttons {
+  word-break: normal;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #727272b9;
+  color: #222;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff8e;
+  color: #222;
+}
+
+tbody tr {
+  flex-wrap: nowrap;
+}
+
+h2 {
+  margin: 20px 0 20px 0;
+}
+
+.container .search {
+  border: 5px solid #222;
+  border-radius: 20px;
+  padding: 15px 15px 15px 40px;
+  width: 30% ;
+}
+
